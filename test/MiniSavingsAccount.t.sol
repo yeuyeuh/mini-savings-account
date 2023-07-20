@@ -48,7 +48,6 @@ contract MiniSavingsAccountTest is Test {
         msa.addStableToken(address(eurTestToken), "EUR");
         msa.changePeggedAssetExchangeRate("EUR",112);
 
-        //vm.prank(address(1));
         vm.startPrank(address(1));
         uint256 amount = 1000*1e18;
         eurTestToken.mint(address(1), amount);
@@ -63,7 +62,6 @@ contract MiniSavingsAccountTest is Test {
         msa.addStableToken(address(eurTestToken), "EUR");
         msa.changePeggedAssetExchangeRate("EUR",112);
 
-        //vm.prank(address(1));
         vm.startPrank(address(1));
         uint256 amount = 1000*1e18;
         eurTestToken.mint(address(1), amount);

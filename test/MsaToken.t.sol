@@ -9,15 +9,10 @@ contract MsaTokenTest is Test {
     MsaToken private msaToken;
 
     function setUp() public {
-        // Deploy NFT contract
+        // Deploy MsaToken contract
         msaToken = new MsaToken("MsaToken", "MSA");
     }
     
-    // function test_RevertMintWithoutValue() public {
-    //     vm.expectRevert(MintPriceNotPaid.selector);
-    //     nft.mintTo(address(1));
-    // }
-
     function testMint() public {
         msaToken.mint(address(1), 1);
     }
